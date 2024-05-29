@@ -13,7 +13,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 350px);
     grid-template-rows: repeat(2, 350px);
-    gap: 10px; /* 可選：為形狀之間添加一些間距 */
+    gap: 0; /* 可選：為形狀之間添加一些間距 */
 }
 
 /* 定義所有形狀的基本樣式 */
@@ -28,14 +28,16 @@ body {
     border-radius: 50%;
 }
 
-/* 右上角下方有50度圓角的正方形 */
+/* 右上角有個下方是圓角的正方形 */
 .rounded-square-top-right {
-    border-top-right-radius: 50px;
+    border-bottom-right-radius: 180px;
+    border-bottom-left-radius: 180px;
 }
 
-/* 左下角右側有50度圓角的正方形 */
+/* 左下角有個右側有圓角的正方形 */
 .rounded-square-bottom-right {
-    border-bottom-right-radius: 50px;
+    border-top-right-radius: 180px;
+    border-bottom-right-radius: 180px;
 }
 
 /* 右下角的正方形 */
