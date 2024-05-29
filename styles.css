@@ -1,0 +1,44 @@
+/* 使 body 使用 Flexbox，讓容器在頁面中居中顯示 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* 定義主容器的佈局和間距 */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 10px; /* 可選：為形狀之間添加一些間距 */
+}
+
+/* 定義所有形狀的基本樣式 */
+.shape {
+    width: 350px;
+    height: 350px;
+    background-color: #3498db;
+}
+
+/* 左上角的圓形 */
+.circle {
+    border-radius: 50%;
+}
+
+/* 右上角下方有50度圓角的正方形 */
+.rounded-square-top-right {
+    border-top-right-radius: 50px;
+}
+
+/* 左下角右側有50度圓角的正方形 */
+.rounded-square-bottom-right {
+    border-bottom-right-radius: 50px;
+}
+
+/* 右下角的正方形 */
+.square {
+    /* 保持為正方形，不需額外的border-radius樣式 */
+}
